@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ventillution.MainPage">
+
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20"
+            VerticalOptions="Center">
+
+            <Label
+                Text="VENTILLUTION"
+                FontSize="32"
+                FontAttributes="Bold"
+                TextColor="#2F4A3A"
+                HorizontalOptions="Center" />
+            
+            <Label
+                Text="Smart Air Monitoring System"
+                FontSize="16"
+                TextColor="#9B8D7A"
+                HorizontalOptions="Center"
+                Margin="0,0,0,20" />    
+
+            <Entry
+                Placeholder="Username or Email" 
+                PlaceholderColor="#9B8D7A"
+                TextColor="#2F4A3A"
+                HeightRequest="50" />
+
+            <Entry
+                Placeholder="Password" 
+                PlaceholderColor="#9B8D7A"
+                TextColor="#2F4A3A"
+                IsPassword="True"
+                HeightRequest="50" />
+
+        <Button
+                Text="LOGIN"
+                BackgroundColor="#2F4A3A"
+                HeightRequest="50"
+                CornerRadius="25" />
+
+        <Label
+                Text="Don't have an account?"
+                TextColor="#9B8D7A"
+                HorizontalOptions="Center"
+                Margin="0,15,0,0" />
+
+        <Button
+                Text="CREATE ACCOUNT"
+                TextColor="#2F4A3A"
+                BackgroundColor="Transparent"
+                BorderColor="#2F4A3A"
+                BorderWidth="1"
+                HeightRequest="45"
+                CornerRadius="22" 
+                Clicked="OnCreateAccountClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ventillution.SignUpPage"
+             Title="SignUpPage"
+             BackgroundColor="#EDE5D8">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="18"
+            VerticalOptions="Center">
+
+            <Label
+                Text="CREATE ACCOUNT"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="#2F4A3A"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="UsernameEntry"
+                Placeholder="Username"
+                PlaceholderColor="#9B8D7A"
+                TextColor="#2F4A3A"
+                BackgroundColor="#D8C8B4" />
+
+            <Entry
+                x:Name="EmailEntry"
+                Placeholder="Email"
+                PlaceholderColor="#9B8D7A"
+                TextColor="#2F4A3A"
+                BackgroundColor="#D8C8B4"
+                Keyboard="Email" />
+
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Password"
+                PlaceholderColor="#9B8D7A"
+                TextColor="#2F4A3A"
+                BackgroundColor="#D8C8B4"
+                IsPassword="True" />
+
+            <Entry
+                x:Name="ConfirmPasswordEntry"
+                Placeholder="Confirm Password"
+                PlaceholderColor="#9B8D7A"
+                TextColor="#2F4A3A"
+                BackgroundColor="#D8C8B4"
+                IsPassword="True" />
+
+            <Button
+                Text="SIGN UP"
+                TextColor="#EDE5D8"
+                BackgroundColor="#2F4A3A"
+                HeightRequest="50"
+                CornerRadius="25"/>
+
+            <Button
+                Text="BACK TO LOGIN"
+                TextColor="#2F4A3A"
+                BackgroundColor="Transparent"
+                Clicked="OnBackToLoginClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
